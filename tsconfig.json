@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "useDefineForClassFields": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "verbatimModuleSyntax": true,
+    "module": "esnext",
+    "jsx": "react-jsx",
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
+    "typeRoots": ["src/types/globals.d.ts"],
+    "baseUrl": ".", // This must be specified if "paths" is.
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

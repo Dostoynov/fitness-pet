@@ -1,0 +1,10 @@
+@import url('./reset.css');
+
+/* We have to style #root element to be able to work with heights of its children */
+#root {
+  height: 100%;
+}
+
+body {
+  min-width: $min;
+}
